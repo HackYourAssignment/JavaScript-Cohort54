@@ -39,12 +39,14 @@ let total = 0;
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
-  // TODO replace this comment with your code
+  console.assert(calculateTotalPrice.length === 1, "Should take one parameter");
 }
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
-  // TODO replace this comment with your code
+  const expected = "Total: €14.05";
+  const actual = calculateTotalPrice(cartForParty);
+  console.assert(actual === expected, `Expected "${expected}", got "${actual}"`);
 }
 
 function test() {
