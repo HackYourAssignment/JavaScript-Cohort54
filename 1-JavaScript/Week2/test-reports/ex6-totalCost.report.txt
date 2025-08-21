@@ -1,0 +1,7 @@
+A unit test file was not provided for this exercise.
+No linting errors detected.
+
+
+*** Spell Checker Report ***
+
+1-JavaScript/Week2/assignment/ex6-totalCost.js:27:3 - Unknown word (coffe)
