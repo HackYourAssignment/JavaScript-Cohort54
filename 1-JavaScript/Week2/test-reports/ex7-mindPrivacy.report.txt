@@ -1,0 +1,10 @@
+A unit test file was not provided for this exercise.
+No linting errors detected.
+
+
+*** Spell Checker Report ***
+
+1-JavaScript/Week2/assignment/ex7-mindPrivacy.js:16:12 - Unknown word (majd)
+1-JavaScript/Week2/assignment/ex7-mindPrivacy.js:23:12 - Unknown word (marit)
+1-JavaScript/Week2/assignment/ex7-mindPrivacy.js:52:14 - Unknown word (majd)
+1-JavaScript/Week2/assignment/ex7-mindPrivacy.js:57:14 - Unknown word (marit)

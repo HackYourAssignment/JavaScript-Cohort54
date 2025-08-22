@@ -29,8 +29,14 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function filterPrivateData(records) {
+  // Create a new array by mapping over the original records
+  return records.map((record) => {
+    // Destructure the non-private properties
+    const { name, occupation, email } = record;
+    // Return a new object with only the allowed properties
+    return { name, occupation, email };
+  });
 }
 
 // ! Test functions (plain vanilla JavaScript)
