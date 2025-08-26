@@ -14,9 +14,18 @@ it pure. Do the following:
    spread syntax.
 5. Confirm that you function passes the provided unit tests.
 ------------------------------------------------------------------------------*/
+
 // ! Function under test
-function addToShoppingCart(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function addToShoppingCart(shoppingCart, item) {
+  // Create a new array using spread syntax to avoid mutating the original
+  const newCart = [...shoppingCart, item];
+
+  // If more than 3 items, remove the first one
+  if (newCart.length > 3) {
+    newCart.shift();
+  }
+
+  return newCart;
 }
 
 // ! Test functions (plain vanilla JavaScript)

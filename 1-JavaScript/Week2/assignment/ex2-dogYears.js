@@ -1,25 +1,18 @@
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Assignment/tree/main/1-JavaScript/Week3#exercise-2-dog-years
 
-You know how old your dog is in human years, but what about dog years? Let's
-calculate it!
+This function calculates a dog's age in dog years based on the input human years.
+------------------------------------------------------------------------------*/
+export function calculateDogAge(humanYears) {
+  // Step 1: Multiply the human years by 7 to get dog years
+  const dogYears = humanYears * 7;
 
-1. Complete the function named `calculateDogAge`.
-
-  - It takes one parameter: your (fictional) puppy's age (number).
-  - Calculate your dog's age based on the conversion rate of 1 human year to
-    7 dog years.
-  - Return a string: "Your doggie is `age` years old in dog years!"
-
-2. Use `console.log` to display the result of the function for three different
-   ages.
------------------------------------------------------------------------------*/
-
-export function calculateDogAge(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+  // Step 2: Return the final string
+  return `Your doggie is ${dogYears} years old in dog years!`;
 }
 
 function main() {
+  // Test the function with three different ages
   console.log(calculateDogAge(1)); // -> "Your doggie is 7 years old in dog years!"
   console.log(calculateDogAge(2)); // -> "Your doggie is 14 years old in dog years!"
   console.log(calculateDogAge(3)); // -> "Your doggie is 21 years old in dog years!"
