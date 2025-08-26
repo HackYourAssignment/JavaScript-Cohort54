@@ -7,9 +7,7 @@ export function tellFortune(array_1, array_2, array_3, array_4) {
   const arraysList = [array_1, array_2, array_3, array_4];
   let selectedItems = [];
   for (const i of arraysList) {
-    console.log(i);
     selectedItems.push(selectRandomly(i));
-    console.log(selectedItems);
   }
 
   return `You will be a ${selectedItems[3]} in ${selectedItems[2]}, married to ${selectedItems[1]} with ${selectedItems[0]} kids.`;

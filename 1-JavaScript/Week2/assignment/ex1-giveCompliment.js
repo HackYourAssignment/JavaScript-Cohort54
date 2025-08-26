@@ -19,7 +19,6 @@ export function giveCompliment(name) {
 }
 
 function main() {
-  // TODO substitute your own name for "HackYourFuture"
   const myName = 'Majd';
 
   console.log(giveCompliment(myName));

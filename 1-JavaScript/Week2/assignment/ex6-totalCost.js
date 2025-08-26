@@ -70,7 +70,7 @@ function test2() {
     initialCart.juice;
   const expectedResult = `Total: € ${expectedResultValue}`;
   const result = calculateTotalPrice(initialCart);
-  console.assert(result === expectedResult, 'Your code is a distaster');
+  console.assert(result === expectedResult, 'Your code is a disaster');
   console.log(result === expectedResult);
 }
 
