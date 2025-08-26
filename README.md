@@ -12,7 +12,7 @@ We highly recommend that you go through this README in detail before starting to
 >
 > This will ensure that the line endings for text files are compatible with those used on MacOS and Linux-based computers.
 
-1. Fork the `HackYourAssignment/Assignments-CohortXX` repository to your own GitHub account.
+1. Fork the `HackYourAssignment/JavaScript-CohortXX` repository to your own GitHub account.
 2. Clone the fork to your local computer.
 3. Open the root folder of the repository in VSCode.
 4. When invited to do so, please install the recommended VSCode extensions.
@@ -24,7 +24,7 @@ We highly recommend that you go through this README in detail before starting to
 10. Fix any reported issues and rerun the test. Repeat until all issues are fixed.
 11. When all assignments are done, commit all changed files. This includes the modified exercises, the generated test summary (`TEST_SUMMARY.md`) and test reports (`EXERCISE_NAME.report.txt`).
 12. Push the changes to your fork.
-13. Create a pull request against the `main` branch of the `HackYourAssignment/Assignments-CohortXX` repository. For the title of your pull request use the same format as the branch name, e.g.: `YOUR_NAME-w2-JavaScript`.
+13. Create a pull request against the `main` branch of the `HackYourAssignment/JavaScript-CohortXX` repository. For the title of your pull request use the same format as the branch name, e.g.: `YOUR_NAME-w2-JavaScript`.
 
 Repeat steps 6-13 for each week. For subsequent weeks the mandated branch names are:
 
@@ -39,7 +39,7 @@ For more information how to hand in your weekly assignments please refer to the 
 
 Throughout your [HYF journey](https://github.com/HackYourFuture/curriculum) you will be asked to do certain exercises. This repository contains all of these exercises for the JavaScript modules (JavaScript, Browsers, UsingAPIs). The module repositories will tell you how to hand in the assignment, the curriculum will indicate what week you will need to do.
 
-> Note that a fork of this repository will be created on the [HackYourAssignment](https://github.com/HackYourAssignment) GitHub account specifically for your cohort. The name of the repository will have the format `Assignments-cohortXX` where `XX` is your cohort number,
+> Note that a fork of this repository will be created on the [HackYourAssignment](https://github.com/HackYourAssignment) GitHub account specifically for your cohort. The name of the repository will have the format `JavaScript-cohortXX` where `XX` is your cohort number,
 
 ## Installation
 
@@ -64,9 +64,9 @@ From the command line, while inside the `Assignments-cohortXX` folder, you can u
 code .
 ```
 
-> When working on your assignments it is strongly recommended to always open the `Assignments-cohortXX` folder in VSCode rather than one of its sub-folders. This gives VSCode and all its extensions the full view on the repository for the best overall developer experience.
+> When working on your assignments it is strongly recommended to always open the `JavaScript-cohortXX` folder in VSCode rather than one of its sub-folders. This gives VSCode and all its extensions the full view on the repository for the best overall developer experience.
 >
-> Note that the name of the folder opened in VSCode can always be found in the `EXPLORER` panel ( `ASSIGNMENTS_COHORT49` in the picture below):
+> Note that the name of the folder opened in VSCode can always be found in the `EXPLORER` panel ( `ASSIGNMENT_COHORT49` in the picture below):
 >
 > ![folder-name](./assets/folder-name.png)
 
