@@ -1,35 +1,29 @@
-/*------------------------------------------------------------------------------
-Full description at: https://github.com/HackYourFuture/Assignments/tree/main/1-JavaScript/Week3#exercise-4-shopping-at-the-supermarket
-
-Let's do some grocery shopping! We're going to get some things to cook dinner
-with. However, you like to spend money and always buy too many things. So when 
-you have more than 3 items in your shopping cart the first item gets taken out.
-
-1. Complete the function named `addToShoppingCart` as follows:
-
-   - It should take one argument: a grocery item (string)
-   - It should add the grocery item to the `shoppingCart` array. If the number of items is
-     more than three remove the first one in the array.
-   - It should return a string "You bought <list-of-items>!", where 
-     <list-of-items>is a comma-separated list of items from the shopping cart 
-     array.
-
-2. Confirm that your code passes the unit tests.
------------------------------------------------------------------------------*/
 const shoppingCart = ['bananas', 'milk'];
+let initialCart = [...shoppingCart];
 
-// ! Function to be tested
-function addToShoppingCart(/* parameters go here */) {
-  // TODO complete this function
+function addToShoppingCart(groceryItem) {
+  if (groceryItem === undefined) {
+    return `You bought ${initialCart.join(', ')}!`;
+  }
+
+  if (initialCart.length < 3) {
+    initialCart.push(groceryItem);
+  } else {
+    initialCart.shift();
+    initialCart.push(groceryItem);
+  }
+
+  return `You bought ${initialCart.join(', ')}!`;
 }
 
-// ! Test functions (plain vanilla JavaScript)
+//  ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log(
     'Test 1: addShoppingCart() called without an argument should leave the shopping cart unchanged'
   );
   const expected = 'You bought bananas, milk!';
   const actual = addToShoppingCart();
+  actual;
   console.assert(actual === expected);
 }
 
@@ -51,6 +45,7 @@ function test4() {
   console.log('Test 4: `waffles` should be added and `bananas` removed');
   const expected = 'You bought milk, chocolate, waffles!';
   const actual = addToShoppingCart('waffles');
+  actual;
   console.assert(actual === expected);
 }
 

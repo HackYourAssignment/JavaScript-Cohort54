@@ -20,22 +20,58 @@ instead!
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
 const cartForParty = {
-  // TODO complete this object
+  beer: 1.99,
+  chips: 0.95,
+  vodka: 18.45,
+  nachos: 4.67,
+  juice: 5.34,
 };
+console.log(cartForParty.beer); //xx
+console.log(typeof cartForParty); //xx
+console.log(typeof cartForParty === 'object'); //xx
 
-function calculateTotalPrice(/* TODO parameter(s) go here */) {
-  // TODO replace this comment with your code
+function calculateTotalPrice(cartItems) {
+  if (typeof cartItems === 'object') {
+    let total = 0;
+    for (let i in cartItems) {
+      console.log(cartItems[i]);
+      total += cartItems[i];
+      console.log(total);
+    }
+    console.log(total);
+    return `Total: € ${total}`;
+  } else {
+    return `${cartItems} is not an object. Please provide an object for this function to work.`;
+  }
 }
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
-  // TODO replace this comment with your code
+  console.assert(calculateTotalPrice.length === 1);
+  console.log(calculateTotalPrice.length === 1);
 }
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
-  // TODO replace this comment with your code
+  const initialCart = {
+    beer: 1.99,
+    chips: 0.95,
+    vodka: 18.45,
+    nachos: 4.67,
+    juice: 5.34,
+  };
+
+  const expectedResultValue =
+    initialCart.beer +
+    initialCart.chips +
+    initialCart.vodka +
+    initialCart.nachos +
+    initialCart.juice;
+  const expectedResult = `Total: € ${expectedResultValue}`;
+  const result = calculateTotalPrice(initialCart);
+  console.assert(result === expectedResult, 'Your code is a disaster');
+  console.log(result === expectedResult);
 }
 
 function test() {
