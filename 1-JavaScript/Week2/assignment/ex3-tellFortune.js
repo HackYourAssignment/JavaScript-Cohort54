@@ -32,29 +32,57 @@ body, this code is now written once only in a separated function.
 
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
-function selectRandomly(/* TODO parameter(s) go here */) {
+function selectRandomly(arr /* TODO parameter(s) go here */) {
   // TODO complete this function
+  return arr[Math.floor(Math.random() * arr.length)];
 }
 
-export function tellFortune(/* TODO add parameter(s) here */) {
+export function tellFortune(
+  childrenArr,
+  partnersArr,
+  locationsArr,
+  jobsArr /* TODO add parameter(s) here */
+) {
   // TODO complete this function
+  const numKids = selectRandomly(childrenArr);
+  const partnerName = selectRandomly(partnersArr);
+  const location = selectRandomly(locationsArr);
+  const jobTitle = selectRandomly(jobsArr);
+
+  return `You will be a ${jobTitle} in ${location}, married to ${partnerName} with ${numKids} kids.`;
 }
 
 function main() {
   const numKids = [
     // TODO add elements here
+    2, 4, 1, 7, 5,
   ];
 
   const partnerNames = [
     // TODO add elements here
+    "Yusuf",
+    "Leen",
+    "Sarah",
+    "Eliana",
+    "Amal",
   ];
 
   const locations = [
     // TODO add elements here
+    "Amsterdam",
+    "Breda",
+    "Tilburg",
+    "Utrecht",
+    "Rotterdam",
   ];
 
   const jobTitles = [
     // TODO add elements here
+    "Programmer",
+    "Teacher",
+    "Soldier",
+    "Manager",
+    "Musician",
   ];
 
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
@@ -63,6 +91,6 @@ function main() {
 }
 
 // ! Do not change or remove the code below
-if (process.env.NODE_ENV !== 'test') {
+if (process.env.NODE_ENV !== "test") {
   main();
 }
