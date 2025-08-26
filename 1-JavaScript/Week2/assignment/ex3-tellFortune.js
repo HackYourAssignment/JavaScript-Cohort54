@@ -4,19 +4,20 @@ function selectRandomly(arrayMain) {
   return randomArrayParametr;
 }
 
-export function tellFortune(jobTitles, locations, partnerNames, numKids) {
-  const jobTitle = selectRandomly(jobTitles);
-  const location = selectRandomly(locations);
-  const partnerName = selectRandomly(partnerNames);
+export function tellFortune(numKids, partnerNames, locations, jobTitles) {
   const numKid = selectRandomly(numKids);
-  return `You will be a ${jobTitle} in ${location}, married to ${partnerName} with ${numKid} kids.`
-} 
+  const partnerName = selectRandomly(partnerNames);
+  const location = selectRandomly(locations);
+  const jobTitle = selectRandomly(jobTitles);
+
+  return `You will be a ${jobTitle} in ${location}, married to ${partnerName} with ${numKid} kids.`;
+}
 
 function main(){
     const jobTitles = ["Artist", "Space pirate", "Psyho", "Software Developer", "Captain of pirates"];
     const locations = ["City", "Island", "Het dorp", "Matrix", "Another Planet"];
     const partnerNames = ["Alice", "Bob", "Alex", "Rob", "Jeniffer"];
-    const numKids = [5, 4, 6, 2, 9];
+const numKids = ["one", "two", "three", "four", "five"];
 
   console.log(tellFortune(jobTitles, locations, partnerNames, numKids));
   console.log(tellFortune(jobTitles, locations, partnerNames, numKids));
