@@ -23,7 +23,7 @@ function test2() {
   console.log('\nTest 2: return correct output when passe cartForParty');
   const testCart = {
     cola: 2,
-    kitkat: 2.4,
+    pizza: 2.4,
     pepsi: 3,
   };
   const target = calculateTotalPrice(testCart);
